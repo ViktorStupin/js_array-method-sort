@@ -20,7 +20,7 @@ function applyCustomSort() {
         if (shouldSwap) {
           const temp = this[j];
 
-          this[j] = this[j + 1];
+          [this[j], this[j + 1]] = [this[j + 1], this[j]];
           this[j + 1] = temp;
         }
       }
